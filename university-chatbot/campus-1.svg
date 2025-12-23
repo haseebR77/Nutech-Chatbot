@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Modern campus building -->
+  <defs>
+    <linearGradient id="sky1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#93c5fd;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="build1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cbd5e1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="800" height="600" fill="url(#sky1)"/>
+  
+  <!-- Sun -->
+  <circle cx="650" cy="100" r="40" fill="#fbbf24" opacity="0.8"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="150" cy="120" rx="50" ry="30" fill="#ffffff" opacity="0.7"/>
+  <ellipse cx="170" cy="110" rx="45" ry="25" fill="#ffffff" opacity="0.7"/>
+  <ellipse cx="500" cy="80" rx="60" ry="35" fill="#ffffff" opacity="0.7"/>
+  
+  <!-- Ground -->
+  <rect y="400" width="800" height="200" fill="#10b981" opacity="0.6"/>
+  
+  <!-- Main building -->
+  <rect x="150" y="200" width="500" height="250" fill="url(#build1)" stroke="#64748b" stroke-width="2"/>
+  
+  <!-- Windows -->
+  <g>
+    <rect x="180" y="230" width="40" height="50" fill="#3b82f6" opacity="0.4"/>
+    <rect x="240" y="230" width="40" height="50" fill="#3b82f6" opacity="0.3"/>
+    <rect x="300" y="230" width="40" height="50" fill="#3b82f6" opacity="0.4"/>
+    <rect x="360" y="230" width="40" height="50" fill="#3b82f6" opacity="0.3"/>
+    <rect x="420" y="230" width="40" height="50" fill="#3b82f6" opacity="0.4"/>
+    <rect x="480" y="230" width="40" height="50" fill="#3b82f6" opacity="0.3"/>
+    <rect x="540" y="230" width="40" height="50" fill="#3b82f6" opacity="0.4"/>
+    
+    <rect x="180" y="300" width="40" height="50" fill="#3b82f6" opacity="0.3"/>
+    <rect x="240" y="300" width="40" height="50" fill="#3b82f6" opacity="0.4"/>
+    <rect x="300" y="300" width="40" height="50" fill="#3b82f6" opacity="0.3"/>
+    <rect x="360" y="300" width="40" height="50" fill="#3b82f6" opacity="0.4"/>
+    <rect x="420" y="300" width="40" height="50" fill="#3b82f6" opacity="0.3"/>
+    <rect x="480" y="300" width="40" height="50" fill="#3b82f6" opacity="0.4"/>
+    <rect x="540" y="300" width="40" height="50" fill="#3b82f6" opacity="0.3"/>
+    
+    <rect x="180" y="370" width="40" height="50" fill="#3b82f6" opacity="0.4"/>
+    <rect x="240" y="370" width="40" height="50" fill="#3b82f6" opacity="0.3"/>
+    <rect x="300" y="370" width="40" height="50" fill="#3b82f6" opacity="0.4"/>
+    <rect x="360" y="370" width="40" height="50" fill="#3b82f6" opacity="0.3"/>
+    <rect x="420" y="370" width="40" height="50" fill="#3b82f6" opacity="0.4"/>
+    <rect x="480" y="370" width="40" height="50" fill="#3b82f6" opacity="0.3"/>
+    <rect x="540" y="370" width="40" height="50" fill="#3b82f6" opacity="0.4"/>
+  </g>
+  
+  <!-- Entrance -->
+  <rect x="360" y="380" width="80" height="70" fill="#1e40af"/>
+  
+  <!-- Building sign -->
+  <rect x="250" y="160" width="300" height="30" fill="#1e40af" rx="5"/>
+  <text x="400" y="182" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">NATIONAL UNIVERSITY OF TECHNOLOGY</text>
+  
+  <!-- Flag -->
+  <rect x="620" y="100" width="8" height="100" fill="#64748b"/>
+  <polygon points="628,100 628,130 680,115" fill="#10b981"/>
+  
+  <!-- Trees -->
+  <ellipse cx="100" cy="380" rx="40" ry="50" fill="#22c55e" opacity="0.8"/>
+  <rect x="90" y="400" width="20" height="50" fill="#78350f"/>
+  
+  <ellipse cx="700" cy="380" rx="40" ry="50" fill="#22c55e" opacity="0.8"/>
+  <rect x="690" y="400" width="20" height="50" fill="#78350f"/>
+  
+  <!-- Pathway -->
+  <polygon points="350,450 450,450 480,600 320,600" fill="#94a3b8" opacity="0.6"/>
+</svg>
