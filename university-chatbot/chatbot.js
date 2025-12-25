@@ -75,9 +75,9 @@ const universityData = {
         <strong>⚡ Engineering Programs:</strong><br>
         7. <strong>BET Civil Engineering</strong> 🏗️<br>
         8. <strong>BS Electrical Engineering</strong> ⚡<br>
-        9. <strong>BS Mechanical Engineering</strong> 🔧<br><br>
-        7. <strong>BS Civil Engineering</strong> 🏗️<br>
-        
+        9. <strong>BS Mechanical Engineering</strong> 🔧<br>
+        10. <strong>BS Civil Engineering</strong> 🏗️<br><br>
+
         <strong>🎓 POSTGRADUATE PROGRAMS (Master's Degree)</strong><br><br>
         
         1. <strong>MS Civil Engineering</strong> 🏗️<br>
