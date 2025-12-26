@@ -611,6 +611,17 @@ function hideTypingIndicator() {
 function sendQuickQuestion(question) {
     document.getElementById('userInput').value = question;
     document.getElementById('chatForm').dispatchEvent(new Event('submit'));
+
+    // Auto-collapse quick actions after selection for cleaner UI
+    const container = document.getElementById('quickActionsContainer');
+    const toggleBtn = document.querySelector('.quick-actions-toggle');
+    if (container && !container.classList.contains('collapsed')) {
+        container.classList.add('collapsed');
+    }
+    if (toggleBtn) {
+        toggleBtn.classList.remove('open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+    }
 }
 
 function clearChat() {
@@ -622,6 +633,21 @@ function clearChat() {
 function toggleInfo() {
     const panel = document.getElementById('infoPanel');
     panel.classList.toggle('active');
+}
+
+function toggleQuickActions() {
+    const toggleBtn = document.querySelector('.quick-actions-toggle');
+    const container = document.getElementById('quickActionsContainer');
+    if (!container || !toggleBtn) return;
+
+    // Toggle collapsed class on container
+    const isNowCollapsed = container.classList.toggle('collapsed');
+
+    // Update visual state on the toggle button (arrow rotation)
+    toggleBtn.classList.toggle('open', !isNowCollapsed);
+
+    // Update aria-expanded for accessibility
+    toggleBtn.setAttribute('aria-expanded', String(!isNowCollapsed));
 }
 
 // Enter key support

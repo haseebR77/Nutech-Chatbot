@@ -311,7 +311,7 @@ body {
 /* Chat Header */
 .chat-header {
     background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-    padding: 20px 25px;
+    padding: 12px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -339,18 +339,18 @@ body {
 .header-left {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
 .ai-avatar {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     position: relative;
     backdrop-filter: blur(10px);
@@ -379,13 +379,13 @@ body {
 
 .header-info h2 {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 .online-status {
     color: rgba(255, 255, 255, 0.9);
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -554,14 +554,53 @@ body {
     font-style: italic;
 }
 
-/* Quick Actions */
-.quick-actions {
-    padding: 15px 18px;
+/* Quick Actions (collapsible) */
+.quick-actions-wrapper {
+    padding: 0 18px;
     background: white;
     border-top: 1px solid #e2e8f0;
+}
+
+.quick-actions-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quick-actions-toggle .label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.quick-actions-toggle .arrow {
+    transition: transform 0.25s ease;
+    color: var(--text-dark);
+}
+
+.quick-actions-toggle.open .arrow {
+    transform: rotate(180deg);
+}
+
+.quick-actions {
+    padding: 15px 0 18px 0;
+    background: white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
+}
+
+.quick-actions.collapsed {
+    display: none;
 }
 
 .quick-action-btn {
@@ -609,7 +648,7 @@ body {
 
 /* Chat Input */
 .chat-input-area {
-    padding: 20px;
+    padding: 12px 20px;
     background: white;
     border-top: 1px solid #e2e8f0;
 }
@@ -621,7 +660,7 @@ body {
     background: #f8fafc;
     border: 2px solid #e2e8f0;
     border-radius: 16px;
-    padding: 8px 12px;
+    padding: 6px 10px;
     transition: all 0.3s ease;
 }
 
@@ -637,7 +676,7 @@ body {
     background: transparent;
     border: none;
     color: var(--text-light);
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -652,7 +691,7 @@ body {
     flex: 1;
     border: none;
     background: transparent;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-family: 'Poppins', sans-serif;
     outline: none;
     color: var(--text-dark);
@@ -669,7 +708,7 @@ body {
     border: none;
     border-radius: 50%;
     color: white;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
@@ -686,8 +725,8 @@ body {
 .input-hint {
     text-align: center;
     color: var(--text-lighter);
-    font-size: 0.8rem;
-    margin-top: 12px;
+    font-size: 0.75rem;
+    margin-top: 8px;
     display: flex;
     align-items: center;
     justify-content: center;

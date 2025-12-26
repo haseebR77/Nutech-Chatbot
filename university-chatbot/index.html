@@ -156,40 +156,50 @@
                     </div>
                 </div>
 
-                <!-- Quick Actions -->
-                <div class="quick-actions">
-                    <button class="quick-action-btn" onclick="sendQuickQuestion('What is the admission process?')">
-                        <i class="fas fa-user-graduate"></i>
-                        <span>Admissions</span>
+                <!-- Quick Actions (collapsible) -->
+                <div class="quick-actions-wrapper">
+                    <button type="button" class="quick-actions-toggle" aria-expanded="false" onclick="toggleQuickActions()">
+                        <span class="label">
+                            <i class="fas fa-bolt"></i>
+                            Quick Actions
+                        </span>
+                        <i class="fas fa-chevron-down arrow" aria-hidden="true"></i>
                     </button>
-                    <button class="quick-action-btn" onclick="sendQuickQuestion('Tell me about all programs')">
-                        <i class="fas fa-laptop-code"></i>
-                        <span>Programs</span>
-                    </button>
-                    <button class="quick-action-btn" onclick="sendQuickQuestion('Tell me about fee structure')">
-                        <i class="fas fa-money-bill-wave"></i>
-                        <span>Fees</span>
-                    </button>
-                    <button class="quick-action-btn" onclick="sendQuickQuestion('Tell me about scholarships')">
-                        <i class="fas fa-trophy"></i>
-                        <span>Scholarships</span>
-                    </button>
-                    <button class="quick-action-btn" onclick="sendQuickQuestion('What clubs are available?')">
-                        <i class="fas fa-users"></i>
-                        <span>Clubs</span>
-                    </button>
-                    <button class="quick-action-btn" onclick="sendQuickQuestion('history')">
-                        <i class="fas fa-info-circle"></i>
-                        <span>About</span>
-                    </button>
-                    <button class="quick-action-btn" onclick="sendQuickQuestion('What are campus facilities?')">
-                        <i class="fas fa-building"></i>
-                        <span>Facilities</span>
-                    </button>
-                    <button class="quick-action-btn" onclick="sendQuickQuestion('How can I contact?')">
-                        <i class="fas fa-phone-alt"></i>
-                        <span>Contact</span>
-                    </button>
+
+                    <div id="quickActionsContainer" class="quick-actions collapsed">
+                        <button class="quick-action-btn" onclick="sendQuickQuestion('What is the admission process?')">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Admissions</span>
+                        </button>
+                        <button class="quick-action-btn" onclick="sendQuickQuestion('Tell me about all programs')">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Programs</span>
+                        </button>
+                        <button class="quick-action-btn" onclick="sendQuickQuestion('Tell me about fee structure')">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Fees</span>
+                        </button>
+                        <button class="quick-action-btn" onclick="sendQuickQuestion('Tell me about scholarships')">
+                            <i class="fas fa-trophy"></i>
+                            <span>Scholarships</span>
+                        </button>
+                        <button class="quick-action-btn" onclick="sendQuickQuestion('What clubs are available?')">
+                            <i class="fas fa-users"></i>
+                            <span>Clubs</span>
+                        </button>
+                        <button class="quick-action-btn" onclick="sendQuickQuestion('history')">
+                            <i class="fas fa-info-circle"></i>
+                            <span>About</span>
+                        </button>
+                        <button class="quick-action-btn" onclick="sendQuickQuestion('What are campus facilities?')">
+                            <i class="fas fa-building"></i>
+                            <span>Facilities</span>
+                        </button>
+                        <button class="quick-action-btn" onclick="sendQuickQuestion('How can I contact?')">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Contact</span>
+                        </button>
+                    </div>
                 </div>
 
                 <!-- Chat Input -->
